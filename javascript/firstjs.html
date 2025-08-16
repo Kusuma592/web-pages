@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kusuma health care</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .title
+    {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-left: 100px;
+        color:white;
+        letter-spacing: 5px;
+    }
+    .bmi-form
+    {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        max-width: 30vw;
+        margin:100px;
+    }
+    *
+    {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: greenyellow;
+        font-size:30px;
+    }
+    .bmi-button
+    {
+        padding:10px;
+        background-color: blueviolet;
+        border:none;
+        color:#21dc10;
+        cursor: pointer;
+    }
+    .bmi-form input{
+        padding:15px;
+        border:none;
+    }
+    .red
+    {
+        background-color: rgb(255,99,99);
+    }
+    .header container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+  </style>
+  <body>
+    <script src="alert.js"></script>
+    <h1 class="title">Kusuma Health Care</h1>
+    <form class="bmi-form">
+        <input type="text" required placeholder="Enter your name" id="name"/>
+        <input type="number" required placeholder="Enter your weight in (KG)" id="weight"/>
+        <input type="number" required placeholder="Enter your height in (CM)" id="height"/>
+        <button class="bmi-button" id="bmi-caluclate">Caluclate</button>
+        <button class="bmi-button red" id="reset">Reset</button>
+        <p id="result"></p>
+    </form>
+    
+  </body>
